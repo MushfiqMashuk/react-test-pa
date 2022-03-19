@@ -1,8 +1,23 @@
 @import "../../styles/Variables";
 
 .body_container {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+
   margin: 0px 100px;
   padding: 10px;
+  overflow-x: hidden;
+
   .news_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr) 300px;

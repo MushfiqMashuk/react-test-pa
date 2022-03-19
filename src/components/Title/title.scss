@@ -6,4 +6,33 @@
   &:hover {
     color: $title-hover-color;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .sup_title {
+    color: $sup-title-color;
+
+    &::after {
+      content: " / ";
+      color: black;
+    }
+  }
+}
+
+h1 {
+  font: {
+    size: $lead-title-font-size;
+    weight: $lead-title-font-weight;
+  }
+}
+
+h3 {
+  font: {
+    size: $title-font-size;
+    weight: $title-font-weight;
+  }
 }

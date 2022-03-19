@@ -17,7 +17,7 @@ const Body = () => {
           <div className="second_news">3</div>
           <div className="left_column">
             <div className="news_without_photo">
-              <Title>This is a title</Title>
+              <Title supTitle="Alzaziara">This is a title</Title>
             </div>
             <div className="news_with_photo"></div>
           </div>
