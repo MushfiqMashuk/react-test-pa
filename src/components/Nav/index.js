@@ -3,9 +3,11 @@ import "./nav.scss";
 
 const Nav = () => {
   return (
-    <div className="nav-container">
-      <img className="logo" src={Logo} alt="Logo" />
-      <hr className="hr"/>
+    <div>
+      <div className="nav-container">
+        <img className="logo" src={Logo} alt="Logo" />
+      </div>
+      {/* <hr className="hr"/> */}
     </div>
   );
 };

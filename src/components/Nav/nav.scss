@@ -1,14 +1,23 @@
+@import "../../styles/Variables";
+
 .nav-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh;
-}
+  height: 10vh;
+  width: 100%;
+  border-bottom: 2px solid $hr-color;
+  padding: 10px;
 
-.logo {
-  width: 20%;
-}
+  .logo {
+    width: 260px;
+  }
 
-.hr {
-  width: 2px;
+  .hr {
+    height: 2px;
+  }
+
+  @media screen and (max-width: 876px) {
+    justify-content: flex-start;
+  }
 }

@@ -1,7 +1,12 @@
 import React from "react";
+import "./body.scss";
 
 const Body = () => {
-  return <div>Body</div>;
+  return <div className="body-container">
+
+    
+
+  </div>;
 };
 
 export default Body;
