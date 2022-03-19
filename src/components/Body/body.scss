@@ -57,6 +57,7 @@
     grid-area: lc;
     background-color: rgb(155, 152, 151);
     grid-column: 1/4;
+    grid-template-rows: 5fr 7fr;
 
     .news_without_photo {
       background-color: aqua;
