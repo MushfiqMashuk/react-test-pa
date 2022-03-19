@@ -1,5 +1,8 @@
+@import "../../styles/Variables";
+
 .body_container {
   margin: 0px 100px;
+  padding: 10px;
   .news_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr) 300px;
@@ -35,8 +38,18 @@
   }
 
   .left_column {
+    display: grid;
     grid-area: lc;
-    background-color: rgb(228, 114, 61);
+    background-color: rgb(155, 152, 151);
+    grid-column: 1/4;
+
+    .news_without_photo {
+      background-color: aqua;
+    }
+
+    .news_with_photo {
+      background-color: bisque;
+    }
   }
 
   .right_column {
@@ -45,8 +58,17 @@
   }
 
   .ad_container {
-    background-color: aqua;
     width: 100%;
     height: 250px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid $hr-color;
+
+    .img {
+      height: 100%;
+      width: 60%;
+    }
   }
 }

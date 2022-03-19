@@ -1,0 +1,9 @@
+@import "../../styles/Variables";
+
+.title {
+  color: $title-color;
+
+  &:hover {
+    color: $title-hover-color;
+  }
+}

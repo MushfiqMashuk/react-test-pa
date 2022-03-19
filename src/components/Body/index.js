@@ -1,4 +1,7 @@
 import React from "react";
+import Ad from "../../styles/images/ad-banner.jpg";
+import ImageComponent from "../ImageComponent";
+import Title from "../Title";
 import "./body.scss";
 
 const Body = () => {
@@ -12,10 +15,17 @@ const Body = () => {
           </div>
           <div className="side_ad">2</div>
           <div className="second_news">3</div>
-          <div className="left_column">4</div>
+          <div className="left_column">
+            <div className="news_without_photo">
+              <Title>This is a title</Title>
+            </div>
+            <div className="news_with_photo"></div>
+          </div>
           <div className="right_column">5 </div>
         </div>
-        <div className="ad_container">Ad Container</div>
+        <div className="ad_container">
+          <ImageComponent src={Ad} alt="Ad Banner" className="img" />
+        </div>
       </div>
     </div>
   );
