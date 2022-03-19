@@ -1,4 +1,34 @@
-.body-container {
-  height: 300px;
-  display: grid;
+.body_container {
+  margin: 0px 100px;
+  .news_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 300px;
+    grid-template-rows: 300px 4fr;
+    height: 100%;
+    gap: 2px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+
+  .news {
+    height: 100px;
+    width: 100%;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ad_container {
+    background-color: aqua;
+    width: 100%;
+    height: 250px;
+  }
+
+  .lead_news {
+    display: grid;
+    width: 100%;
+    grid-column: 1 / 3;
+    grid-template-columns: 1fr 1fr;
+  }
 }
