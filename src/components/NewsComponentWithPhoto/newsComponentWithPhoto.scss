@@ -1,0 +1,13 @@
+.news_component_with_photo_container {
+  .img {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    margin: 0px 15px 15px 15px;
+  }
+
+  .news_container_with_photo {
+    display: flex;
+    justify-content: flex-start;
+  }
+}

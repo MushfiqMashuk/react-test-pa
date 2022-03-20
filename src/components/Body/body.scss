@@ -64,7 +64,8 @@
     }
 
     .news_with_photo {
-      background-color: bisque;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
 

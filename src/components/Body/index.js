@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Ad from "../../styles/images/ad-banner.jpg";
 import ImageComponent from "../ImageComponent";
 import NewsComponent from "../NewsComponent";
+import NewsComponentWithPhoto from "../NewsComponentWithPhoto";
 import "./body.scss";
 
 const Body = () => {
@@ -18,6 +19,7 @@ const Body = () => {
         const response = await fetch("http://localhost:4000/news");
 
         const data = await response.json();
+        console.log(data);
 
         setLoading(false);
         setNewsData(data);
@@ -46,11 +48,21 @@ const Body = () => {
               <div className="second_news">3</div>
               <div className="left_column">
                 <div className="news_without_photo">
-                  <NewsComponent newsItem={newsData[0]} />
-                  <NewsComponent newsItem={newsData[1]} />
-                  <NewsComponent newsItem={newsData[2]} />
+                  {newsData &&
+                    newsData
+                      .slice(0, 3)
+                      .map((news) => (
+                        <NewsComponent newsItem={news} key={news.id} />
+                      ))}
                 </div>
-                <div className="news_with_photo"></div>
+                <div className="news_with_photo">
+                  {newsData &&
+                    newsData
+                      .slice(3, 9)
+                      .map((news) => (
+                        <NewsComponentWithPhoto newsItem={news} key={news.id} />
+                      ))}
+                </div>
               </div>
               <div className="right_column">5 </div>
             </div>
