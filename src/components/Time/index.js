@@ -1,9 +1,9 @@
 import "./time.scss";
 
-const Time = ({ children }) => {
+const Time = ({ children, ...props }) => {
   return (
-    <div className="time_container">
-      <time>{children}</time>
+    <div className="time_container" {...props}>
+      {children}
     </div>
   );
 };

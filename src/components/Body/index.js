@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
 import Ad from "../../styles/images/ad-banner.jpg";
+import SidebarAdImage from "../../styles/images/sidebar_ad.jpg";
 import ImageComponent from "../ImageComponent";
 import NewsComponent from "../NewsComponent";
 import NewsComponentWithPhoto from "../NewsComponentWithPhoto";
+import ReadNews from "../ReadNews";
+import SidebarAd from "../SidebarAd";
+import VideoComponent from "../VideoComponent";
 import "./body.scss";
 
 const Body = () => {
@@ -44,13 +48,17 @@ const Body = () => {
                 <div className="lead_news_container">Lead News</div>
                 <div className="image_conainer">Image</div>
               </div>
-              <div className="side_ad">2</div>
-              <div className="second_news">3</div>
+              <div className="side_ad">
+                <SidebarAd src={SidebarAdImage} alt="Sidebar Ad" />
+              </div>
+              <div className="second_news">
+                <NewsComponent newsItem={newsData[1]} />
+              </div>
               <div className="left_column">
                 <div className="news_without_photo">
                   {newsData &&
                     newsData
-                      .slice(0, 3)
+                      .slice(2, 5)
                       .map((news) => (
                         <NewsComponent newsItem={news} key={news.id} />
                       ))}
@@ -58,13 +66,17 @@ const Body = () => {
                 <div className="news_with_photo">
                   {newsData &&
                     newsData
-                      .slice(3, 9)
+                      .slice(5, 11)
                       .map((news) => (
                         <NewsComponentWithPhoto newsItem={news} key={news.id} />
                       ))}
                 </div>
               </div>
-              <div className="right_column">5 </div>
+              <div className="right_column">
+                <VideoComponent newsItem={newsData[12]} />
+                <NewsComponentWithPhoto newsItem={newsData[11]} />
+                <ReadNews />
+              </div>
             </div>
             <div className="ad_container">
               <ImageComponent src={Ad} alt="Ad Banner" className="img" />

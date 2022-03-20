@@ -5,15 +5,21 @@ const Title = ({ children, lead = false, supTitle = "" }) => {
     <>
       {lead ? (
         <h1 className="title">
-          {supTitle.length > 0 && (
-            <span className="sup_title">{`${supTitle} / `}</span>
-          )}{" "}
-          {children}
+          <a href="#">
+            {supTitle.length > 0 && (
+              <span className="sup_title">{`${supTitle} / `}</span>
+            )}{" "}
+            {children}
+          </a>
         </h1>
       ) : (
         <h3 className="title">
-          {supTitle.length > 0 && <span className="sup_title">{supTitle}</span>}{" "}
-          {children}
+          <a href="#">
+            {supTitle.length > 0 && (
+              <span className="sup_title">{supTitle}</span>
+            )}{" "}
+            {children}
+          </a>
         </h3>
       )}
     </>

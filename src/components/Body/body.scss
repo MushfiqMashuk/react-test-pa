@@ -20,7 +20,7 @@
   .news_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr) 300px;
-    grid-template-rows: 300px 600px;
+    grid-template-rows: 300px 650px;
     grid-template-areas:
       "ln ln sn sa"
       "lc lc lc rc";
@@ -42,13 +42,15 @@
   .second_news {
     width: 100%;
     grid-area: sn;
-    background-color: #7e6c69;
   }
 
   .side_ad {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     grid-area: sa;
-    background-color: rgb(71, 192, 176);
   }
 
   .left_column {
@@ -60,18 +62,23 @@
     .news_without_photo {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 30px;
+      column-gap: 32px;
     }
 
     .news_with_photo {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 32px;
     }
   }
 
   .right_column {
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 2/3;
+    grid-template-columns: 4fr;
     grid-area: rc;
-    background-color: rgb(74, 83, 219);
+    row-gap: 32px;
   }
 
   .ad_container {
