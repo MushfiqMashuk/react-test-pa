@@ -1,0 +1,22 @@
+@import "../../styles/Variables";
+
+.description_container {
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: break-all;
+  width: 300px;
+  color: $description-color;
+  font-size: $description-font-size;
+
+  a {
+    text-decoration: none;
+    width: inherit;
+
+    &:active {
+      color: $description-color;
+    }
+    &:visited {
+      color: $description-color;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import "../../styles/Variables";
+
+.time_container {
+  display: flex;
+  justify-content: flex-start;
+  color: $description-color;
+  font-size: $time-font-size;
+  margin: 10px 0px;
+}

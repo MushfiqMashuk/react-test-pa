@@ -11,7 +11,6 @@
   ul,
   ol {
     margin: 0;
-    padding: 0;
   }
 
   margin: 0px 100px;
@@ -55,12 +54,13 @@
   .left_column {
     display: grid;
     grid-area: lc;
-    background-color: rgb(155, 152, 151);
     grid-column: 1/4;
-    grid-template-rows: 5fr 7fr;
+    grid-template-rows: 4fr 6fr;
 
     .news_without_photo {
-      background-color: aqua;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 30px;
     }
 
     .news_with_photo {

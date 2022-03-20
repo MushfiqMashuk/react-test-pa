@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
 import Ad from "../../styles/images/ad-banner.jpg";
 import ImageComponent from "../ImageComponent";
-import Title from "../Title";
+import NewsComponent from "../NewsComponent";
 import "./body.scss";
 
 const Body = () => {
   const [newsData, setNewsData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-
-  console.log(newsData);
 
   useEffect(() => {
     const getData = async () => {
@@ -20,8 +18,6 @@ const Body = () => {
         const response = await fetch("http://localhost:4000/news");
 
         const data = await response.json();
-
-        console.log(data);
 
         setLoading(false);
         setNewsData(data);
@@ -50,7 +46,9 @@ const Body = () => {
               <div className="second_news">3</div>
               <div className="left_column">
                 <div className="news_without_photo">
-                  <Title supTitle="Alzaziara">This is a title</Title>
+                  <NewsComponent newsItem={newsData[0]} />
+                  <NewsComponent newsItem={newsData[1]} />
+                  <NewsComponent newsItem={newsData[2]} />
                 </div>
                 <div className="news_with_photo"></div>
               </div>

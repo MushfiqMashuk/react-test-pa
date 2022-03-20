@@ -1,0 +1,20 @@
+.news_component_container {
+  padding: 5px;
+  height: 100%;
+
+  h1,
+  h2,
+  h3 {
+    padding-bottom: 10px;
+  }
+
+  &::after {
+    content: "";
+    height: 25%;
+    background-color: rgb(204, 200, 200);
+    width: 1px;
+    position: absolute;
+    top: 420px;
+    left: 430px;
+  }
+}
