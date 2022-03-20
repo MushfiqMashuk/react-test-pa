@@ -1,9 +1,11 @@
+@import "../../styles/Variables";
+
 .footer_container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 70px;
   width: 100%;
-  color: rgb(158, 158, 158);
-  font-size: 0.9rem;
+  color: $footer-text-color;
+  font-size: $footer-font-size;
 }
