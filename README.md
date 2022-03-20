@@ -1,3 +1,11 @@
+To Run This App: Simply run these commands on your terminal ->
+
+### Step: 1 -> `yarn serve-json`
+
+[This will run a JSON database in your local machine]
+
+### Step: 2 -> `yarn start`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
