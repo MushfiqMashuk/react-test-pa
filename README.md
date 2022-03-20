@@ -2,7 +2,7 @@ To Run This App: Simply run these commands on your terminal ->
 
 ### Step: 1 -> `yarn serve-json`
 
-[This will run a JSON database in your local machine]
+[This will start a JSON database in your local machine]
 
 ### Step: 2 -> `yarn start`
 
