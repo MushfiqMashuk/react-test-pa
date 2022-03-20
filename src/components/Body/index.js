@@ -45,8 +45,11 @@ const Body = () => {
           <div>
             <div className="news_container">
               <div className="lead_news">
-                <div className="lead_news_container">Lead News</div>
-                <div className="image_conainer">Image</div>
+                <NewsComponent newsItem={newsData[0]} />
+                <ImageComponent
+                  src={newsData[0]?.photo}
+                  className="lead_news_image_conainer"
+                />
               </div>
               <div className="side_ad">
                 <SidebarAd src={SidebarAdImage} alt="Sidebar Ad" />

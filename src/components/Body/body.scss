@@ -16,6 +16,7 @@
   margin: 0px 100px;
   padding: 10px;
   overflow-x: hidden;
+  font-family: $font-family;
 
   .news_container {
     display: grid;
@@ -25,7 +26,7 @@
       "ln ln sn sa"
       "lc lc lc rc";
     height: 100%;
-    gap: 2px;
+    gap: 32px;
     word-wrap: break-word;
     word-break: break-all;
   }
@@ -35,8 +36,14 @@
     width: 100%;
     // grid-column: 1 / 3;
     grid-area: ln;
-    grid-template-columns: 1fr 1fr;
-    background-color: #ee4023;
+    grid-template-columns: 6fr 7fr;
+    gap: 12px;
+
+    .lead_news_image_conainer {
+      width: 100%;
+      height: 80%;
+      object-fit: cover;
+    }
   }
 
   .second_news {
@@ -89,6 +96,7 @@
     justify-content: center;
     align-items: center;
     border-top: 2px solid $hr-color;
+    border-bottom: 2px solid $hr-color;
 
     .img {
       height: 100%;
