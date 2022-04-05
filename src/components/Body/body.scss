@@ -28,7 +28,6 @@
     height: 100%;
     gap: 32px;
     word-wrap: break-word;
-    word-break: break-all;
   }
 
   .lead_news {
@@ -64,7 +63,7 @@
     display: grid;
     grid-area: lc;
     grid-column: 1/4;
-    grid-template-rows: 4fr 6fr;
+    grid-row: 2/3;
 
     .news_without_photo {
       display: grid;
